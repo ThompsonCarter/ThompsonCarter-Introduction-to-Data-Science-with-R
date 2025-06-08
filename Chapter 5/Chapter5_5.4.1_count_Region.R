@@ -1,0 +1,1 @@
+sales %>% count(region, sort = TRUE)

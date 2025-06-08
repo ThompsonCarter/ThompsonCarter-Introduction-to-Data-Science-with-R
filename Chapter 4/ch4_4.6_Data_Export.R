@@ -1,0 +1,6 @@
+write_csv(df_clean, "clean/sales.csv")
+write_xlsx(df_clean, "clean/sales.xlsx")
+dbWriteTable(con, "clean_sales", df_clean)
+saveRDS(df_clean, "clean/sales.rds")
+library(arrow)
+write_parquet(df_clean, "clean/sales.parquet")

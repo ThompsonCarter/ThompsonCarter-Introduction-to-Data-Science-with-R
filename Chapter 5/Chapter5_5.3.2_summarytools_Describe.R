@@ -1,0 +1,5 @@
+install.packages("summarytools")
+library(summarytools)
+descr(sales$order_value)
+freq(sales$region)
+dfSummary(clinic, plain.ascii = FALSE, style = "grid")

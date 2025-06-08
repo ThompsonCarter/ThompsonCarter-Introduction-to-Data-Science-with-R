@@ -1,0 +1,1 @@
+aggregate(weight ~ gender, data = measurements, FUN = mean)

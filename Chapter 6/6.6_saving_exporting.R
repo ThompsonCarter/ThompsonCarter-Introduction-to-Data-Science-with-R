@@ -1,0 +1,1 @@
+ggsave("plots/defect_scatter.png", width = 6, height = 4, dpi = 300)

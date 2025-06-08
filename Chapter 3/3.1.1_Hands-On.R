@@ -1,0 +1,5 @@
+library(dplyr)
+iris_tbl  <- as_tibble(iris)
+mtcars_tbl <- as_tibble(mtcars)
+glimpse(iris_tbl)
+glimpse(mtcars_tbl)
