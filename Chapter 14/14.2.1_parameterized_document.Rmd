@@ -1,0 +1,20 @@
+---
+params:
+  region:
+    label: "Choose Region"
+    value: "North"
+    choices: ["North","South","East","West"]
+---
+
+```{r}
+sales <- read_csv("sales.csv") |>
+           filter(region == params$region)
+```
+
+```{r}
+regions <- c("North","South","East","West")
+purrr::walk(regions, ~ rmarkdown::render(
+    "sales_report.Rmd",
+    params = list(region = .x),
+    output_file = paste0("sales_", .x, ".html")))
+```

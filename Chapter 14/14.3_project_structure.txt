@@ -1,0 +1,10 @@
+myproject/
+├── analysis/          # Rmd/qmd, figures, reference docs
+│   └── report.qmd
+├── data/              # immutable raw data
+│   └── downtime.csv
+├── scripts/           # reusable R/Python functions
+│   └── util.R
+├── renv/ or .conda/   # environment lock
+├── output/            # rendered reports, final tables
+└── README.md

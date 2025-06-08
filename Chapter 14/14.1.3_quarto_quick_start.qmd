@@ -1,0 +1,11 @@
+---
+title: "Demand Forecast"
+format: html
+---
+
+```{r}
+library(fpp3)
+aus_retail |>
+  filter(State == "Victoria", Industry == "Department stores") |>
+  autoplot(Turnover)
+```

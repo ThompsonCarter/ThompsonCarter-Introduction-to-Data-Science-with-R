@@ -1,0 +1,5 @@
+set.seed(123)
+data   <- read_csv("defect_classification.csv")
+split  <- initial_split(data, prop = 0.8, strata = defect_flag)
+train  <- training(split)
+test   <- testing(split)

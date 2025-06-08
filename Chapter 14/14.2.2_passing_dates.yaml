@@ -1,0 +1,2 @@
+params:
+  daterange: !expr c(ymd("2025-01-01"), Sys.Date())

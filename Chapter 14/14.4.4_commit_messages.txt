@@ -1,0 +1,3 @@
+feat: add profit margin KPI to dashboard
+fix: correct date parsing for CSV import
+docs: update README with render instructions
